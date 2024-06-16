@@ -29,7 +29,6 @@ Use [Weave Scope](http://weave.works/products/weave-scope/) or [Weave Cloud](htt
 ![Sock Shop in Weave Scope](https://github.com/microservices-demo/microservices-demo.github.io/raw/master/assets/sockshop-scope.png)
 
 ## Origins
-[DataScientest](https://github.com/DataScientest/microservices-app/tree/master)
-[weaveworks services](https://github.com/weaveworks)
+[DataScientest](https://github.com/DataScientest/microservices-app/tree/master) and [weaveworks services](https://github.com/weaveworks)
 
 ## 
