@@ -23,7 +23,7 @@ spec:
             - containerPort: {{ .Values.frontend.containerPort }}
           env:
             - name: SESSION_REDIS
-              value: {{ .Values.frontend.env.SESSION_REDIS }}
+              value: "{{ .Values.frontend.env.SESSION_REDIS }}"
           securityContext:
             runAsNonRoot: true
             runAsUser: 10001
