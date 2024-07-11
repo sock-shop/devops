@@ -20,10 +20,10 @@ carts:
   resources:
     limits:
       cpu: 300m
-      memory: 500Mi
+      memory: 1000Mi
     requests:
       cpu: 100m
-      memory: 200Mi
+      memory: 500Mi
   # carts DB
   db:
     image:
@@ -48,8 +48,8 @@ catalogue:
     tag: 0.3.5
   resources:
     limits:
-      cpu: 200m
-      memory: 200Mi
+      cpu: 100m
+      memory: 100Mi
     requests:
       cpu: 100m
       memory: 100Mi
@@ -65,11 +65,11 @@ catalogue:
       MYSQL_ROOT_PASSWORD: fake_password
     resources:
       limits:
-        cpu: 200m
-        memory: 200Mi
+        cpu: 300m
+        memory: 500Mi
       requests:
         cpu: 100m
-        memory: 100Mi
+        memory: 300Mi
 
 # frontend
 frontend:
@@ -82,8 +82,8 @@ frontend:
     SESSION_REDIS: "true"
   resources:
     limits:
-      cpu: 300m
-      memory: 1000Mi
+      cpu: 200m
+      memory: 500Mi
     requests:
       cpu: 100m
       memory: 300Mi
@@ -102,11 +102,11 @@ orders:
     tag: 0.4.7
   resources:
     limits:
-      cpu: 500m
+      cpu: 300m
       memory: 500Mi
     requests:
       cpu: 100m
-      memory: 300Mi
+      memory: 200Mi
   # orders DB
   db:
     replicaCount: 1
@@ -124,7 +124,7 @@ payment:
     tag: 0.4.3
   resources:
     limits:
-      cpu: 200m
+      cpu: 150m
       memory: 200Mi
     requests:
       cpu: 99m
@@ -139,11 +139,11 @@ queue_master:
     tag: 0.3.1
   resources:
     limits:
-      cpu: 300m
+      cpu: 200m
       memory: 500Mi
     requests:
       cpu: 100m
-      memory: 300Mi
+      memory: 200Mi
 
 # rabbitmq
 rabbitmq:
@@ -198,10 +198,10 @@ shipping:
   resources:
     limits:
       cpu: 300m
-      memory: 1000Mi
-    requests:
-      cpu: 300m
       memory: 500Mi
+    requests:
+      cpu: 200m
+      memory: 400Mi
 
 # userdb
 userdb:
@@ -213,10 +213,10 @@ userdb:
   resources:
     limits:
       cpu: 300m
-      memory: 1000Mi
+      memory: 500Mi
     requests:
       cpu: 100m
-      memory: 500Mi
+      memory: 400Mi
 
 # user
 user:
@@ -228,7 +228,7 @@ user:
   resources:
     limits:
       cpu: 300m
-      memory: 1000Mi
+      memory: 500Mi
     requests:
       cpu: 100m
-      memory: 500Mi
+      memory: 400Mi
